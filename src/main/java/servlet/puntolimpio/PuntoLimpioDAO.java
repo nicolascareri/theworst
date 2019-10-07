@@ -55,8 +55,8 @@ public class PuntoLimpioDAO implements DAO<PuntoLimpio, Integer> {
     public List<Double> getVolumen(){
         EntityManager em = EMF.createEntityManager();
         Query query = em.createQuery("SELECT pl.cargaMaxima - pl.cargaActual from PuntoLimpio pl");
-        List<Double> tamaño = query.getResultList();
+        List<Double> tamano = query.getResultList();
         em.close();
-        return tamaño;
+        return tamano;
     }
 }

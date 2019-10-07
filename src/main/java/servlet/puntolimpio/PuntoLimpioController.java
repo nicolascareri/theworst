@@ -33,12 +33,12 @@ public class PuntoLimpioController {
         query.createPuntoLimpio(pl);
         return Response.status(201).entity(null).build();
     }
-    @Path("/{id}/tamaño")
+    @Path("/{id}/tamano")
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Response isLleno(){
-        List tamaño = query.getVolumen();
-        return Response.status(200).entity(tamaño).build();
+        List tamano = query.getVolumen();
+        return Response.status(200).entity(tamano).build();
     }
     @Path("/{id}/reciclado")
     @GET
