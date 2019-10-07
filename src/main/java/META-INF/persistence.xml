@@ -4,6 +4,11 @@
              xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
     <persistence-unit name="my_persistence_unit">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>servlet.item.Item</class>
+        <class>servlet.usuario.Usuario</class>
+        <class>servlet.puntolimpio.PuntoLimpio</class>
+        <class>servlet.reporte.Reporte</class>
+        <class>servlet.Ong.Ong</class>
         <properties>
             <property name="javax.persistence.jdbc.driver"
                       value="org.apache.derby.jdbc.EmbeddedDriver" />
